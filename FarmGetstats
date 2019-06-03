@@ -1,0 +1,21 @@
+#!/bin/bash
+
+up=`/usr/bin/fping -c1 -t300 $1 &> /dev/null ; echo $?`
+
+if [ $up = 0 ]; then
+
+set -o errexit
+set -o nounset
+
+ADDRESS=$1
+PORT=$2
+
+stats_raw=`echo '{"id":0,"jsonrpc":"2.0","method":"miner_getstat1"}' | nc $ADDRESS $PORT | tr -d '\0\n'`
+stats_raw=$(sed 's/}{/\},{/' <<< "$stats_raw")
+
+#STATS=$(jq '.STATS' <<< "$stats_raw")
+
+#echo $STATS
+echo $stats_raw
+
+fi

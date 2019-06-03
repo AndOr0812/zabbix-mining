@@ -4,3 +4,4 @@
 * AntMinerGetAllstats - Feech asic status JSON information
 * AntMinerGetAllpool - Feech asic pools JSON information
 * rebootasic - Reboot asic wihtout ssh
+* FarmGetstats - Get Claymor GPU Farm json information
