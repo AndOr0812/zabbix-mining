@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-03T07:07:12Z</date>
+    <date>2019-06-03T07:38:47Z</date>
     <groups>
         <group>
             <name>Фермы</name>
@@ -37,11 +37,11 @@
                     <key>Farm.Card1</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -106,11 +106,11 @@
                     <key>Farm.Card2</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -175,11 +175,11 @@
                     <key>Farm.Card3</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -244,11 +244,11 @@
                     <key>Farm.Card4</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -313,11 +313,11 @@
                     <key>Farm.Card5</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -382,11 +382,11 @@
                     <key>Farm.Card6</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -451,11 +451,11 @@
                     <key>Farm.Card7</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -520,11 +520,11 @@
                     <key>Farm.Card8</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -589,11 +589,11 @@
                     <key>Farm.Card9</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -658,11 +658,11 @@
                     <key>Farm.Card10</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -727,11 +727,11 @@
                     <key>Farm.Card11</key>
                     <delay>0</delay>
                     <history>1d</history>
-                    <trends>0</trends>
+                    <trends>1d</trends>
                     <status>0</status>
-                    <value_type>4</value_type>
+                    <value_type>0</value_type>
                     <allowed_hosts/>
-                    <units/>
+                    <units>MH/s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -875,7 +875,7 @@
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
-                    <units>m</units>
+                    <units>s</units>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
