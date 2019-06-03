@@ -1,4 +1,4 @@
-# External script and teplates for Getting Antminer and Farm metrics into Zabbix
+# External script and tepmlates for Getting Antminer and GPU Claymore Farm metrics into Zabbix
 
 **#Antminer scripts (Antminer S9, L3 ...)**
 * AntMinerGetAllstats - Feech asic status JSON information

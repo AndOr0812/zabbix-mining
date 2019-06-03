@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-03T05:19:42Z</date>
+    <date>2019-06-03T07:07:12Z</date>
     <groups>
         <group>
             <name>Фермы</name>
@@ -1230,7 +1230,17 @@
         <trigger>
             <expression>({Farm:icmpping.last()}=1 and {Farm:net.tcp.service[tcp,,3333].last()}=1) and ({Farm:Farm.Card1.last(#1)}&lt;23000) or ({Farm:Farm.Card2.last(#1)}&lt;23000) or  ({Farm:Farm.Card3.last(#1)}&lt;23000) or ({Farm:Farm.Card4.last(#1)}&lt;23000) or ({Farm:Farm.Card5.last(#1)}&lt;23000) or ({Farm:Farm.Card6.last(#1)}&lt;23000) or  ({Farm:Farm.Card7.last(#1)}&lt;23000) or  ({Farm:Farm.Card8.last(#1)}&lt;23000) or  ({Farm:Farm.Card9.last(#1)}&lt;23000) or ({Farm:Farm.Card10.last(#1)}&lt;23000) or ({Farm:Farm.Card11.last(#1)}&lt;23000)</expression>
             <recovery_mode>1</recovery_mode>
-            <recovery_expression>({Farm:icmpping.last()}=1 and {Farm:net.tcp.service[tcp,,3333].last()}=1) and ({Farm:Farm.Card1.last()}&gt;23000) or ({Farm:Farm.Card2.last()}&gt;23000) or  ({Farm:Farm.Card3.last()}&gt;23000) or ({Farm:Farm.Card4.last()}&gt;23000) or ({Farm:Farm.Card5.last()}&gt;23000) or ({Farm:Farm.Card6.last()}&gt;23000) or  ({Farm:Farm.Card7.last()}&gt;23000) or  ({Farm:Farm.Card8.last()}&gt;23000) or  ({Farm:Farm.Card9.last()}&gt;23000) or ({Farm:Farm.Card10.last()}&gt;23000) or ({Farm:Farm.Card11.last()}&gt;23000)</recovery_expression>
+            <recovery_expression>({Farm:icmpping.last()}=1 and {Farm:net.tcp.service[tcp,,3333].last()}=1) and ({Farm:Farm.Card1.nodata(1m)}=0 and {Farm:Farm.Card1.last()}&gt;23000) and &#13;
+({Farm:Farm.Card2.nodata(1m)}=0 and {Farm:Farm.Card2.last()}&gt;23000) and  &#13;
+({Farm:Farm.Card3.nodata(1m)}=0 and {Farm:Farm.Card3.last()}&gt;23000) and &#13;
+({Farm:Farm.Card4.nodata(1m)}=0 and {Farm:Farm.Card4.last()}&gt;23000) and &#13;
+({Farm:Farm.Card5.nodata(1m)}=0 and {Farm:Farm.Card5.last()}&gt;23000) and &#13;
+({Farm:Farm.Card6.nodata(1m)}=0 and {Farm:Farm.Card6.last()}&gt;23000) and  &#13;
+({Farm:Farm.Card7.nodata(1m)}=0 and {Farm:Farm.Card7.last()}&gt;23000) and  &#13;
+({Farm:Farm.Card8.nodata(1m)}=0 and {Farm:Farm.Card8.last()}&gt;23000) and  &#13;
+({Farm:Farm.Card9.nodata(1m)}=0 and {Farm:Farm.Card9.last()}&gt;23000) and &#13;
+({Farm:Farm.Card10.nodata(1m)}=0 and {Farm:Farm.Card10.last()}&gt;23000) and &#13;
+({Farm:Farm.Card11.nodata(1m)}=0 and {Farm:Farm.Card11.last()}&gt;23000)</recovery_expression>
             <name>Farm Low hashrate on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
