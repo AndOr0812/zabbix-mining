@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-04T02:13:54Z</date>
+    <date>2019-06-04T05:04:43Z</date>
     <groups>
         <group>
             <name>AntMiner S9</name>
@@ -1581,7 +1581,7 @@
             <tags/>
         </trigger>
         <trigger>
-            <expression>({AntMiner S9:AntMinerS9.Hashrate.max(240)}&lt;13 and  {AntMiner S9:AntMinerS9.Elapsed.last()}&gt;600) and ({AntMiner S9:icmpping.last()}=1)</expression>
+            <expression>(({AntMiner S9:AntMinerS9.WorkingMode.last()} = 240 and ({AntMiner S9:AntMinerS9.Hashrate.max(240)}&lt;10 and  {AntMiner S9:AntMinerS9.Elapsed.last()}&gt;600)) or ({AntMiner S9:AntMinerS9.Hashrate.max(240)}&lt;13 and  {AntMiner S9:AntMinerS9.Elapsed.last()}&gt;600)) and ({AntMiner S9:icmpping.last()}=1)</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>AntMiner S9 Low hashrate on {HOST.NAME}</name>
@@ -1592,7 +1592,7 @@
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>1</manual_close>
+            <manual_close>0</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
