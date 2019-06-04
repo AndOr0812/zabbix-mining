@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-04T05:09:57Z</date>
+    <date>2019-06-04T05:31:07Z</date>
     <groups>
         <group>
             <name>AntMiner S9</name>
@@ -1593,6 +1593,22 @@
             <description/>
             <type>0</type>
             <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{AntMiner S9:AntMinerS9.WorkingMode.last()}=240 and {AntMiner S9:icmpping.last()}=1</expression>
+            <recovery_mode>1</recovery_mode>
+            <recovery_expression>{AntMiner S9:AntMinerS9.WorkingMode.last()}=1</recovery_expression>
+            <name>AntMiner S9 Включен LPEM {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
