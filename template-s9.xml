@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-04T05:04:43Z</date>
+    <date>2019-06-04T05:09:57Z</date>
     <groups>
         <group>
             <name>AntMiner S9</name>
@@ -1592,7 +1592,7 @@
             <priority>2</priority>
             <description/>
             <type>0</type>
-            <manual_close>0</manual_close>
+            <manual_close>1</manual_close>
             <dependencies/>
             <tags/>
         </trigger>
