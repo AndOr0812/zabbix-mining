@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-05T17:59:48Z</date>
+    <date>2019-06-05T18:22:12Z</date>
     <groups>
         <group>
             <name>AntMiner L3</name>
@@ -1569,6 +1569,18 @@
                     <macro>{$HOST.PORT}</macro>
                     <value>4028</value>
                 </macro>
+                <macro>
+                    <macro>{$URL1}</macro>
+                    <value>stratum+tcp://eu.ltc.sigmapool.com:3333</value>
+                </macro>
+                <macro>
+                    <macro>{$URL2}</macro>
+                    <value>stratum+tcp://eu1.ltc.sigmapool.com:3333</value>
+                </macro>
+                <macro>
+                    <macro>{$URL3}</macro>
+                    <value>stratum+tcp://scrypt.eu.nicehash.com:3333</value>
+                </macro>
             </macros>
             <templates/>
             <screens/>
@@ -1689,7 +1701,7 @@
             <tags/>
         </trigger>
         <trigger>
-            <expression>({AntMiner L3:AntMinerL3.URL1.str(stratum+tcp://eu.ltc.sigmapool.com:3333)}=0 or {AntMiner L3:AntMinerL3.URL2.str(stratum+tcp://eu1.ltc.sigmapool.com:3333)}=0 or {AntMiner L3:AntMinerL3.URL3.str(stratum+tcp://scrypt.eu.nicehash.com:3333)}=0) and {AntMiner L3:icmpping.last()}=1</expression>
+            <expression>({AntMiner L3:AntMinerL3.URL1.str({$URL1})}=0 or {AntMiner L3:AntMinerL3.URL2.str({$URL2})}=0 or {AntMiner L3:AntMinerL3.URL3.str({$URL3})}=0) and {AntMiner L3:icmpping.last()}=1</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>Внимание &quot;левые&quot; URL! {HOST.NAME}</name>
