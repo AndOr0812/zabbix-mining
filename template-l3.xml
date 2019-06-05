@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-05T17:43:24Z</date>
+    <date>2019-06-05T17:59:48Z</date>
     <groups>
         <group>
             <name>AntMiner L3</name>
@@ -1681,6 +1681,22 @@
             <correlation_tag/>
             <url/>
             <status>0</status>
+            <priority>0</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>({AntMiner L3:AntMinerL3.URL1.str(stratum+tcp://eu.ltc.sigmapool.com:3333)}=0 or {AntMiner L3:AntMinerL3.URL2.str(stratum+tcp://eu1.ltc.sigmapool.com:3333)}=0 or {AntMiner L3:AntMinerL3.URL3.str(stratum+tcp://scrypt.eu.nicehash.com:3333)}=0) and {AntMiner L3:icmpping.last()}=1</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Внимание &quot;левые&quot; URL! {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
             <priority>0</priority>
             <description/>
             <type>0</type>
