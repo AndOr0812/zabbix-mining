@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-05T11:08:32Z</date>
+    <date>2019-06-05T13:49:29Z</date>
     <groups>
         <group>
             <name>Фермы</name>
@@ -1332,6 +1332,22 @@ return $123;</params>
             <correlation_tag/>
             <url/>
             <status>1</status>
+            <priority>1</priority>
+            <description/>
+            <type>0</type>
+            <manual_close>1</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>({Farm:icmpping.last()}=1 and {Farm:net.tcp.service[tcp,,3333].last()}=1) and {Farm:Farm.VideoSum.last()}&lt;{$VIDEO}</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>Отвал GPU {HOST.NAME}</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
             <priority>1</priority>
             <description/>
             <type>0</type>
