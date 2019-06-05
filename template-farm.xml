@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-05T13:49:29Z</date>
+    <date>2019-06-05T13:51:44Z</date>
     <groups>
         <group>
             <name>Фермы</name>
@@ -1316,23 +1316,6 @@ return $123;</params>
             <url/>
             <status>1</status>
             <priority>2</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>1</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>({Farm:icmpping.last()}=1 and {Farm:net.tcp.service[tcp,,3333].last()}=1) and&#13;
-({Farm:Farm.Card1.last()}&gt;0 and {Farm:Farm.Card1.nodata(15m)}=1) or ({Farm:Farm.Card2.last()}&gt;0 and {Farm:Farm.Card2.nodata(15m)}=1) or ({Farm:Farm.Card3.last()}&gt;0 and {Farm:Farm.Card3.nodata(15m)}=1) or ({Farm:Farm.Card4.last()}&gt;0 and {Farm:Farm.Card4.nodata(15m)}=1) or ({Farm:Farm.Card5.last()}&gt;0 and {Farm:Farm.Card5.nodata(15m)}=1) or ({Farm:Farm.Card6.last()}&gt;0 and {Farm:Farm.Card6.nodata(15m)}=1) or ({Farm:Farm.Card7.last()}&gt;0 and {Farm:Farm.Card7.nodata(15m)}=1) or ({Farm:Farm.Card8.last()}&gt;0 and {Farm:Farm.Card8.nodata(15m)}=1) or ({Farm:Farm.Card9.last()}&gt;0 and {Farm:Farm.Card9.nodata(15m)}=1) or ({Farm:Farm.Card10.last()}&gt;0 and {Farm:Farm.Card10.nodata(15m)}=1) or ({Farm:Farm.Card11.last()}&gt;0 and {Farm:Farm.Card11.nodata(15m)}=1)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>Отвал GPU {HOST.NAME}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>1</status>
-            <priority>1</priority>
             <description/>
             <type>0</type>
             <manual_close>1</manual_close>
