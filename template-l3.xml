@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-05T18:22:12Z</date>
+    <date>2019-06-08T06:03:42Z</date>
     <groups>
         <group>
             <name>AntMiner L3</name>
@@ -1613,7 +1613,7 @@
             <correlation_tag/>
             <url/>
             <status>0</status>
-            <priority>1</priority>
+            <priority>3</priority>
             <description/>
             <type>0</type>
             <manual_close>1</manual_close>
