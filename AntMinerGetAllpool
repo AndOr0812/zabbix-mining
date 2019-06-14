@@ -9,8 +9,9 @@ set -o nounset
 
 ADDRESS=$1
 PORT=$2
+TIMEOUT=0.5
 
-pools_raw=`echo '{"command":"pools"}' | nc $ADDRESS $PORT | tr -d '\0\n'`
+pools_raw=`echo '{"command":"pools"}' | timeout $TIMEOUT nc $ADDRESS $PORT | tr -d '\0\n'`
 pools_raw=$(sed 's/}{/\},{/' <<< "$pools_raw")
 POOLS=$(jq '.POOLS' <<< "$pools_raw")
 
