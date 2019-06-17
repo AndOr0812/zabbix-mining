@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zabbix_export>
+    <version>4.2</version>
+    <date>2019-06-17T05:12:36Z</date>
+    <value_maps>
+        <value_map>
+            <name>Asic</name>
+            <mappings>
+                <mapping>
+                    <value>1</value>
+                    <newvalue>Normal</newvalue>
+                </mapping>
+                <mapping>
+                    <value>240</value>
+                    <newvalue>Low Power Enhanced Mode</newvalue>
+                </mapping>
+                <mapping>
+                    <value>250</value>
+                    <newvalue>Hashrate Unchanged - Lower Voltage</newvalue>
+                </mapping>
+            </mappings>
+        </value_map>
+    </value_maps>
+</zabbix_export>
