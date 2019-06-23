@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-06-22T09:25:21Z</date>
+    <date>2019-06-23T02:31:42Z</date>
     <groups>
         <group>
             <name>Фермы</name>
@@ -1265,7 +1265,7 @@ return $123;</params>
     </templates>
     <triggers>
         <trigger>
-            <expression>{Farm:net.tcp.service[tcp,,3333].last(10m)}=0 and {Farm:icmpping.last()}=1</expression>
+            <expression>{Farm:net.tcp.service[tcp,,3333].last(10m)}=0 and {Farm:icmpping.last(10m)}=1</expression>
             <recovery_mode>1</recovery_mode>
             <recovery_expression>{Farm:net.tcp.service[tcp,,3333].last()}=1</recovery_expression>
             <name>Claymore DOWN {HOST.NAME}</name>
