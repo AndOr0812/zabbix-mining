@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-07-06T06:06:47Z</date>
+    <date>2019-07-06T07:14:30Z</date>
     <groups>
         <group>
             <name>AntMiner L3</name>
@@ -1706,6 +1706,10 @@
                     <value>4028</value>
                 </macro>
                 <macro>
+                    <macro>{$TEMP_LOW}</macro>
+                    <value>75</value>
+                </macro>
+                <macro>
                     <macro>{$URL1}</macro>
                     <value>stratum+tcp://eu.ltc.sigmapool.com:3333</value>
                 </macro>
@@ -1741,9 +1745,9 @@
             <tags/>
         </trigger>
         <trigger>
-            <expression>(({AntMiner L3:AntMinerL3.Temp1.min(15m)}&gt;75 or {AntMiner L3:AntMinerL3.Temp2.min(15m)}&gt;75 or {AntMiner L3:AntMinerL3.Temp3.min(15m)}&gt;75 or {AntMiner L3:AntMinerL3.Temp4.min(15m)}&gt;75) and {AntMiner L3:icmpping.last()}=1)</expression>
+            <expression>(({AntMiner L3:AntMinerL3.Temp1.min(15m)}&gt;{$TEMP_LOW} or {AntMiner L3:AntMinerL3.Temp2.min(15m)}&gt;{$TEMP_LOW} or {AntMiner L3:AntMinerL3.Temp3.min(15m)}&gt;{$TEMP_LOW} or {AntMiner L3:AntMinerL3.Temp4.min(15m)}&gt;{$TEMP_LOW}) and {AntMiner L3:icmpping.last()}=1)</expression>
             <recovery_mode>1</recovery_mode>
-            <recovery_expression>(({AntMiner L3:AntMinerL3.Temp1.last()}&lt;75 or {AntMiner L3:AntMinerL3.Temp2.last()}&lt;75 or {AntMiner L3:AntMinerL3.Temp3.last()}&lt;75 or {AntMiner L3:AntMinerL3.Temp4.last()}&lt;75) and {AntMiner L3:icmpping.last()}=1)</recovery_expression>
+            <recovery_expression>(({AntMiner L3:AntMinerL3.Temp1.min(15m)}&lt;{$TEMP_LOW} or {AntMiner L3:AntMinerL3.Temp2.min(15m)}&lt;{$TEMP_LOW} or {AntMiner L3:AntMinerL3.Temp3.min(15m)}&lt;{$TEMP_LOW} or {AntMiner L3:AntMinerL3.Temp4.min(15m)}&lt;{$TEMP_LOW}) and {AntMiner L3:icmpping.last()}=1)</recovery_expression>
             <name>AntMiner L3 High temp on {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
