@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-07-06T03:24:43Z</date>
+    <date>2019-07-06T06:06:47Z</date>
     <groups>
         <group>
             <name>AntMiner L3</name>
@@ -1782,22 +1782,6 @@
             <url/>
             <status>0</status>
             <priority>2</priority>
-            <description/>
-            <type>0</type>
-            <manual_close>1</manual_close>
-            <dependencies/>
-            <tags/>
-        </trigger>
-        <trigger>
-            <expression>({AntMiner L3:AntMinerL3.Hashrate1.last(240)}&lt;90 or {AntMiner L3:AntMinerL3.Hashrate2.last(240)}&lt;90  or {AntMiner L3:AntMinerL3.Hashrate3.last(240)}&lt;90 or {AntMiner L3:AntMinerL3.Hashrate4.last(240)}&lt;90 and {AntMiner L3:AntMinerL3.Elapsed.last()}&gt;600) and ({AntMiner L3:icmpping.last()}=1)</expression>
-            <recovery_mode>0</recovery_mode>
-            <recovery_expression/>
-            <name>AntMiner L3 Хешь лезвия &lt; 90Mh  {HOST.NAME}</name>
-            <correlation_mode>0</correlation_mode>
-            <correlation_tag/>
-            <url/>
-            <status>1</status>
-            <priority>0</priority>
             <description/>
             <type>0</type>
             <manual_close>1</manual_close>
