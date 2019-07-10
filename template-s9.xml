@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-07-07T00:28:43Z</date>
+    <date>2019-07-10T14:30:57Z</date>
     <groups>
         <group>
             <name>AntMiner S9</name>
@@ -1790,6 +1790,30 @@
                 <mapping>
                     <value>240</value>
                     <newvalue>Low Power Enhanced Mode</newvalue>
+                </mapping>
+                <mapping>
+                    <value>241</value>
+                    <newvalue>HashRate-0.5TH/S</newvalue>
+                </mapping>
+                <mapping>
+                    <value>242</value>
+                    <newvalue>HashRate-1.0TH/S</newvalue>
+                </mapping>
+                <mapping>
+                    <value>243</value>
+                    <newvalue>HashRate-1.5TH/S</newvalue>
+                </mapping>
+                <mapping>
+                    <value>244</value>
+                    <newvalue>HashRate-2.0TH/S</newvalue>
+                </mapping>
+                <mapping>
+                    <value>245</value>
+                    <newvalue>HashRate-2.5TH/S</newvalue>
+                </mapping>
+                <mapping>
+                    <value>246</value>
+                    <newvalue>HashRate-3.0TH/S</newvalue>
                 </mapping>
                 <mapping>
                     <value>250</value>
