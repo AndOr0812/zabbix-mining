@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-07-10T14:30:57Z</date>
+    <date>2019-12-10T02:08:11Z</date>
     <groups>
         <group>
             <name>AntMiner S9</name>
@@ -29,124 +29,6 @@
                 </application>
             </applications>
             <items>
-                <item>
-                    <name>AntMinerGetAllpool</name>
-                    <type>10</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>AntMinerGetAllpool[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
-                    <delay>300s</delay>
-                    <history>1d</history>
-                    <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>AntMinerS9Pool</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
-                <item>
-                    <name>AntMinerGetAllstats</name>
-                    <type>10</type>
-                    <snmp_community/>
-                    <snmp_oid/>
-                    <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
-                    <delay>300s</delay>
-                    <history>1d</history>
-                    <trends>0</trends>
-                    <status>0</status>
-                    <value_type>4</value_type>
-                    <allowed_hosts/>
-                    <units/>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <params/>
-                    <ipmi_sensor/>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>AntMinerS9All</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                    <preprocessing/>
-                    <jmx_endpoint/>
-                    <timeout>3s</timeout>
-                    <url/>
-                    <query_fields/>
-                    <posts/>
-                    <status_codes>200</status_codes>
-                    <follow_redirects>1</follow_redirects>
-                    <post_type>0</post_type>
-                    <http_proxy/>
-                    <headers/>
-                    <retrieve_mode>0</retrieve_mode>
-                    <request_method>0</request_method>
-                    <output_format>0</output_format>
-                    <allow_traps>0</allow_traps>
-                    <ssl_cert_file/>
-                    <ssl_key_file/>
-                    <ssl_key_password/>
-                    <verify_peer>0</verify_peer>
-                    <verify_host>0</verify_host>
-                    <master_item/>
-                </item>
                 <item>
                     <name>CompileTime</name>
                     <type>18</type>
@@ -212,7 +94,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -280,7 +162,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -348,7 +230,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -416,7 +298,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -484,7 +366,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -558,7 +440,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -632,7 +514,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -706,7 +588,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -780,7 +662,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -848,7 +730,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -916,7 +798,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -984,7 +866,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1052,7 +934,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1120,7 +1002,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllpool[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;pools&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1188,7 +1070,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllpool[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;pools&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1256,7 +1138,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllpool[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;pools&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1324,7 +1206,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllpool[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;pools&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1392,7 +1274,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllpool[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;pools&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1462,7 +1344,7 @@
                     <verify_peer>0</verify_peer>
                     <verify_host>0</verify_host>
                     <master_item>
-                        <key>AntMinerGetAllstats[&quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                        <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
                     </master_item>
                 </item>
                 <item>
@@ -1503,6 +1385,124 @@
                     <valuemap>
                         <name>Service state</name>
                     </valuemap>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>AntMinerGetAllpool</name>
+                    <type>10</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>Miner[&quot;pools&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                    <delay>300s</delay>
+                    <history>1d</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>AntMinerS9Pool</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
+                </item>
+                <item>
+                    <name>AntMinerGetAllstats</name>
+                    <type>10</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>Miner[&quot;stats&quot;, &quot;{HOST.CONN}&quot;, &quot;{$HOST.PORT}&quot;]</key>
+                    <delay>300s</delay>
+                    <history>1d</history>
+                    <trends>0</trends>
+                    <status>0</status>
+                    <value_type>4</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>AntMinerS9All</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
                     <logtimefmt/>
                     <preprocessing/>
                     <jmx_endpoint/>
@@ -1738,7 +1738,7 @@
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>0</priority>
             <description/>
             <type>0</type>
@@ -1763,14 +1763,14 @@
             <tags/>
         </trigger>
         <trigger>
-            <expression>{AntMiner S9:AntMinerS9.CompileTime.str(&quot;2019&quot;)}=0</expression>
+            <expression>{AntMiner S9:AntMinerS9.CompileTime.str(&quot;May&quot;)}=0</expression>
             <recovery_mode>1</recovery_mode>
-            <recovery_expression>{AntMiner S9:AntMinerS9.CompileTime.str(&quot;2019&quot;)}=1</recovery_expression>
+            <recovery_expression>{AntMiner S9:AntMinerS9.CompileTime.str(&quot;May&quot;)}=1</recovery_expression>
             <name>Старая прошивка S9 {HOST.NAME}</name>
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>0</priority>
             <description/>
             <type>0</type>
