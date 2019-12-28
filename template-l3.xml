@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-12-28T01:55:53Z</date>
+    <date>2019-12-28T02:40:48Z</date>
     <groups>
         <group>
             <name>AntMiner L3</name>
@@ -1702,6 +1702,10 @@
             <httptests/>
             <macros>
                 <macro>
+                    <macro>{$HASH_LOW}</macro>
+                    <value>400</value>
+                </macro>
+                <macro>
                     <macro>{$HOST.PORT}</macro>
                     <value>4028</value>
                 </macro>
@@ -1777,7 +1781,7 @@
             <tags/>
         </trigger>
         <trigger>
-            <expression>({AntMiner L3:AntMinerL3.Hashrate.last(240)}&lt;400 and {AntMiner L3:AntMinerL3.Elapsed.last()}&gt;600) and ({AntMiner L3:icmpping.last()}=1)</expression>
+            <expression>({AntMiner L3:AntMinerL3.Hashrate.last(240)}&lt;{$HASH_LOW} and {AntMiner L3:AntMinerL3.Elapsed.last()}&gt;600) and ({AntMiner L3:icmpping.last()}=1)</expression>
             <recovery_mode>0</recovery_mode>
             <recovery_expression/>
             <name>AntMiner L3 Low hashrate on {HOST.NAME}</name>
