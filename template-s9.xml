@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>4.2</version>
-    <date>2019-12-10T02:08:11Z</date>
+    <date>2019-12-28T01:56:20Z</date>
     <groups>
         <group>
             <name>AntMiner S9</name>
@@ -946,7 +946,7 @@
                     <delay>0</delay>
                     <history>1d</history>
                     <trends>0</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1014,7 +1014,7 @@
                     <delay>0</delay>
                     <history>1d</history>
                     <trends>0</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1082,7 +1082,7 @@
                     <delay>0</delay>
                     <history>1d</history>
                     <trends>0</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1150,7 +1150,7 @@
                     <delay>0</delay>
                     <history>1d</history>
                     <trends>0</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1218,7 +1218,7 @@
                     <delay>0</delay>
                     <history>1d</history>
                     <trends>0</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1417,7 +1417,7 @@
                     <delay>300s</delay>
                     <history>1d</history>
                     <trends>0</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>4</value_type>
                     <allowed_hosts/>
                     <units/>
@@ -1754,7 +1754,7 @@
             <correlation_mode>0</correlation_mode>
             <correlation_tag/>
             <url/>
-            <status>0</status>
+            <status>1</status>
             <priority>0</priority>
             <description/>
             <type>0</type>
